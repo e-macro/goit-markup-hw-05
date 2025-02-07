@@ -526,7 +526,29 @@
       </div>
     </footer>
     <div class="modal-overlay">
-      <div class="modal">modal content</div>
+      <div class="modal">
+        <!-- <button type="button" class="modal-close-btn"> -->
+        <!-- <svg class="icon" width="8" height="8"> -->
+        <!-- <use href="./images/icons.svg#icon-close"></use> -->
+        <!-- </svg> -->
+        <!-- </button> -->
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="contacts_form">
+          <label for="name" class="form-name">
+            Name<input type="text" name="name" />
+          </label>
+          <label for="phome" class="form-tel"
+            >Phone
+            <input type="tel" name="phone" />
+          </label>
+          <label for="email" class="form-email">
+            Email<input type="email" name="email" />
+          </label>
+          <label for="comment" class="form-comm">
+            Comment<input type="text" name="comment" placeholder="Text input" />
+          </label>
+        </form>
+      </div>
     </div>
   </body>
 </html>
