@@ -566,6 +566,8 @@ footer .container {
     justify-content: center;
     align-items: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
     
  }
 
@@ -670,7 +672,7 @@ footer .container {
     border-color: #4d5ae5;
 }
 
-.input-box .icon {
+.input-box .input-icon {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -678,8 +680,8 @@ footer .container {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-box:hover .icon, 
-.input:focus .icon {
+.input:hover + .input-icon, 
+.input:focus + .input-icon {
     fill: #4d5ae5;
 }
 
@@ -712,10 +714,6 @@ footer .container {
     margin-bottom: 24px;
 }
 
-.user-privacy {
-    
-}
-
 .privacy-label {
     font-size: 12px;
     line-height: 1.17;
@@ -736,7 +734,7 @@ footer .container {
 
 }
 
-.user-privacy:checked .privacy-span {
+.user-privacy:checked + .privacy-label > .privacy-span {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
@@ -761,4 +759,9 @@ footer .container {
     background-color: #4d5ae5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
