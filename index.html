@@ -530,6 +530,7 @@
               <input
                 type="email"
                 name="subscribe"
+                id="subscribe"
                 placeholder="E-mail"
                 class="subscribe-input"
               />
@@ -554,52 +555,44 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="contacts_form">
           <div class="contacts-form">
-            <label for="user-name" class="form-name">
-              Name
+            <label for="user-name" class="form-name"> Name</label>
+            <div class="input-box">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input"
+              />
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="contacts-form">
+              <label for="phone" class="form-name"> Phone </label>
               <div class="input-box">
-                <input
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  class="input"
-                />
+                <input type="tel" name="phone" id="phone" class="input" />
                 <svg class="icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person"></use>
+                  <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
-            </label>
-            <div class="contacts-form">
-              <label for="phome" class="form-name">
-                Phone
-                <div class="input-box">
-                  <input type="tel" name="phone" id="phone" class="input" />
-                  <svg class="icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                </div>
-              </label>
             </div>
             <div class="contacts-form">
-              <label for="email" class="form-name">
-                Email
-                <div class="input-box">
-                  <input type="email" name="email" id="email" class="input" />
-                  <svg class="icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                </div>
-              </label>
+              <label for="email" class="form-name"> Email</label>
+              <div class="input-box">
+                <input type="email" name="email" id="email" class="input" />
+                <svg class="icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </div>
             <div class="comment-form">
-              <label for="user-comment" class="form-name"
-                >Comment
-                <textarea
-                  name="user-comment"
-                  id="user-comment"
-                  placeholder="Text input"
-                  class="comment-text"
-                ></textarea>
-              </label>
+              <label for="user-comment" class="form-name">Comment</label>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+                class="comment-text"
+              ></textarea>
             </div>
             <div class="checkbox">
               <input
@@ -612,10 +605,10 @@
               <label for="user-privacy" class="privacy-label">
                 <span class="privacy-span"
                   ><svg class="icon" width="10" height="8">
-                    <use
-                      href="./images/icons.svg#icon-checkbox"
-                    ></use></svg></span
-                >I accept the terms and condistions of the
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+                I accept the terms and condistions of the
                 <a href="" class="privacy-policy"> Privacy Policy</a></label
               >
             </div>
