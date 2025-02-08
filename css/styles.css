@@ -484,6 +484,55 @@ footer .container {
     fill: #f4f4fd;
  }
 
+.subscribe-footer {
+    margin-left: 80px;
+}
+
+.subscribe-footer-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-subscribe {
+    display: flex;
+    border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        
+}
+
+.form-subscribe input {
+    width: 264px;
+        height: 40px;
+        background-color: #2e2f42;
+}
+
+.subscribe-btn {
+    font-weight: 500;
+        font-size: 16px;
+    
+        /* line-height: 24px; */
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        background-color: #4d5ae5;
+}
+
+.subscribe-btn .icon {
+    fill: #fff;
+}
+
  .modal-overlay {
     position: fixed;
     top: 0;
@@ -507,9 +556,8 @@ footer .container {
     justify-content: center;
  }
 
- .modal-close-btn {
+ /* .modal-close-btn */
     
- }
 
  .modal .modal-text {
     font-weight: 500;
